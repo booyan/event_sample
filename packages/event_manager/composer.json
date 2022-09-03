@@ -1,0 +1,31 @@
+{
+    "name": "booyan/event_manager",
+    "description": "A demo package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "booyan",
+            "email": "booyan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Booyan\\EventManager\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Booyan\\EventManager\\EventManagerServiceProvider"
+            ]
+        }
+    }
+}

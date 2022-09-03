@@ -1,0 +1,38 @@
+{
+    "name": "booyan/extra_message",
+    "description": "A demo package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "booyan",
+            "email": "booyan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "booyan/event_manager": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Booyan\\ExtraMessage\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../packages/event_manager"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Booyan\\ExtraMessage\\Providers\\ExtraMessageServiceProvider"
+            ]
+        }
+    }
+}
